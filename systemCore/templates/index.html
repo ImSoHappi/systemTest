@@ -1,5 +1,8 @@
 hola puto
 
-{% for msg in mesagges %}
-    <li>{{ msg.messages }}</li>
-{% endfor %}
+<form method="POST">
+    {% csrf_token %}
+    {{  form.as_p }}
+    <button type="submit">CACA</button>
+</form>
+    
